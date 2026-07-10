@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family:  sans-serif;
+  overflow: hidden;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+}
+.left {
+  width: 50%;
+  height: 100%;
+  background-color:white;
+}
+.right {
+  width: 50%;
+  height: 100%;
+  background-color: #b93930;
+}
+.left nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  height: 100px;
+
+}
+nav .logo {
+  color: black;
+  text-align: center;
+  font-size: 1.65rem;
+  color: #122F2A;
+  text-decoration: bold;
+}
+
+nav .searchbar{
+    padding: 0.5rem;
+    width: 300px;
+    height: 40px;
+    position: relative;
+    right:90px;
+    border-radius: 20px;
+    background-color:#F0F0F0;
+
+}
+.searchbar input {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    border: none;
+   background-color: transparent;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 20px;
+}
+.nav-links {
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.rotated-label {
+    transform: rotate(-90deg);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 50px;
+    font-weight: 700;
+    color: #122F2A;
+    margin-left: -30px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.centered-center{
+    display: flex;
+    height:calc(100% - 100px);
+    /* border: 1px solid black; */
+    align-items: center;
+    justify-content:flex-start;
+    gap: 20px;
+}
+.class-list {
+    list-style: none;
+    width: 40%;
+}
+
+.class-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 15px 0;
+    border-bottom: 1px solid #e8e5e0;
+}
+
+.class-list li:last-child {
+    border-bottom: none;
+}
+
+.red-dot {
+    width: 8px;
+    height: 8px;
+    background: #b02a1a;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 6px;
+}
+
+.class-text strong {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #122F2A;
+    margin-bottom: 2px;
+}
+
+.class-text span {
+    font-size: 14px;
+    font-weight: 300;
+    color: #40403a;
+}
+
+section .insect-image {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 80%;
+}
+.right-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 0px 60px 0px;
+    margin-right: -20%;
+    position: relative;
+    left: 300px;
+}
+
+ .species-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 64px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: .9;
+    margin-bottom: 38px;
+    letter-spacing: -0.5px;
+}
+
+.specs-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 36px;
+}
+
+.icon-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    border-right: 1.5px solid rgba(255, 255, 255, 0.39);
+    margin-right: 25px;
+}
+
+.icon-col img {
+    width: 100%;
+}
+
+.mm-label {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.spec-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.spec-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.spec-row i {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.62);
+    width: 18px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.spec-info strong {
+    display: block;
+    font-size: 11px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.699);
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+}
+
+.spec-info span {
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.price {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    color: #ddc08a;
+    letter-spacing: -1.5px;
+    margin-bottom: 26px;
+}
+
+.toggles {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 34px;
+}
+
+.toggle-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.toggle {
+    width: 50px;
+    height: 25px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.16);
+    border: 1.5px solid rgba(255, 255, 255, 0.26);
+    position: relative;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.toggle::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    width: 16px;
+    height: 16px;
+    background: rgba(255, 255, 255, 0.653);
+    border-radius: 50%;
+}
+
+.toggle-label {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.849);
+    font-weight: 300;
+}
+
+.add-btn {
+    background: #ddc08a;
+    color: #122F2A;
+    border: none;
+    border-radius: 10px;
+    padding: 18px 0;
+    width: 90%;
+    max-width: 320px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    cursor: pointer;
+} 
